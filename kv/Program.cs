@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace kv
 {
     static class Program
     {
-        public static KvntEntities kv = new KvntEntities();
+        public static KvntEntities1 kv = new KvntEntities1();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="77da1c4893504f8bb7154fabd8668d64" Name="Diagram1" ZoomLevel="74">
-        <EntityTypeShape EntityType="KvntModel.Agent" Width="1.5" PointX="5.375" PointY="4.25" IsExpanded="true" />
+      <Diagram DiagramId="2624088155e64015bfe23c3aa11dbfd0" Name="Diagram1">
+        <EntityTypeShape EntityType="KvntModel.Agent" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
         <EntityTypeShape EntityType="KvntModel.Extradition" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="KvntModel.Material" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="KvntModel.Provider" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="KvntModel.Provider" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="KvntModel.Shipment" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="KvntModel.SummaryList" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="KvntModel.Users" Width="1.5" PointX="7.625" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KvntModel.Users" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="KvntModel.FK_Extradition_Agent" ManuallyRouted="false" />
         <AssociationConnector Association="KvntModel.FK_Extradition_Shipment" ManuallyRouted="false" />
         <AssociationConnector Association="KvntModel.FK_SummaryList_Extradition" ManuallyRouted="false" />
