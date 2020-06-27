@@ -59,6 +59,7 @@
           <Property Name="Quantity" Type="bigint" />
           <Property Name="Place" Type="nvarchar(max)" />
           <Property Name="TotalPrice" Type="bigint" />
+          <Property Name="Date" Type="date" />
         </EntityType>
         <EntityType Name="SummaryList">
           <Key>
@@ -231,6 +232,7 @@
           <Property Name="Quantity" Type="Int64" />
           <Property Name="Place" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="TotalPrice" Type="Int64" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
           <NavigationProperty Name="Extradition" Relationship="Self.FK_Extradition_Shipment" FromRole="Shipment" ToRole="Extradition" />
           <NavigationProperty Name="Material" Relationship="Self.FK_Shipment_Material" FromRole="Shipment" ToRole="Material" />
           <NavigationProperty Name="Provider" Relationship="Self.FK_Shipment_Provider" FromRole="Shipment" ToRole="Provider" />
@@ -313,7 +315,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="KvntEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="KvntEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Agent" EntityType="Self.Agent" />
           <EntitySet Name="Extradition" EntityType="Self.Extradition" />
           <EntitySet Name="Material" EntityType="Self.Material" />
@@ -347,7 +349,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище KvntModelContainer" CdmEntityContainer="KvntEntities1">
+        <EntityContainerMapping StorageEntityContainer="Хранилище KvntModelContainer" CdmEntityContainer="KvntEntities2">
           <EntitySetMapping Name="Agent">
             <EntityTypeMapping TypeName="KvntModel.Agent">
               <MappingFragment StoreEntitySet="Agent">
@@ -405,6 +407,7 @@
                 <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="Place" ColumnName="Place" />
                 <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
