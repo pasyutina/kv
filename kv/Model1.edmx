@@ -313,7 +313,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="KvntEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="KvntEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Agent" EntityType="Self.Agent" />
           <EntitySet Name="Extradition" EntityType="Self.Extradition" />
           <EntitySet Name="Material" EntityType="Self.Material" />
@@ -347,7 +347,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище KvntModelContainer" CdmEntityContainer="KvntEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище KvntModelContainer" CdmEntityContainer="KvntEntities1">
           <EntitySetMapping Name="Agent">
             <EntityTypeMapping TypeName="KvntModel.Agent">
               <MappingFragment StoreEntitySet="Agent">

@@ -13,10 +13,10 @@ namespace kv
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class KvntEntities : DbContext
+    public partial class KvntEntities1 : DbContext
     {
-        public KvntEntities()
-            : base("name=KvntEntities")
+        public KvntEntities1()
+            : base("name=KvntEntities1")
         {
         }
     
