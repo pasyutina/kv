@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSum));
             this.comboBoxExtra = new System.Windows.Forms.ComboBox();
-            this.comboBoxShip = new System.Windows.Forms.ComboBox();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
@@ -43,8 +42,9 @@
             this.Ship = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Extra = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Balance = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.labelShip = new System.Windows.Forms.Label();
             this.labelExtra = new System.Windows.Forms.Label();
+            this.labelShip = new System.Windows.Forms.Label();
+            this.comboBoxShip = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,15 +56,6 @@
             this.comboBoxExtra.Name = "comboBoxExtra";
             this.comboBoxExtra.Size = new System.Drawing.Size(158, 27);
             this.comboBoxExtra.TabIndex = 168;
-            // 
-            // comboBoxShip
-            // 
-            this.comboBoxShip.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBoxShip.FormattingEnabled = true;
-            this.comboBoxShip.Location = new System.Drawing.Point(86, 51);
-            this.comboBoxShip.Name = "comboBoxShip";
-            this.comboBoxShip.Size = new System.Drawing.Size(158, 27);
-            this.comboBoxShip.TabIndex = 167;
             // 
             // buttonEdit
             // 
@@ -79,6 +70,7 @@
             this.buttonEdit.TabIndex = 166;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonAdd
             // 
@@ -93,6 +85,7 @@
             this.buttonAdd.TabIndex = 165;
             this.buttonAdd.Text = "Создать";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonDel
             // 
@@ -107,6 +100,7 @@
             this.buttonDel.TabIndex = 164;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = false;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // pictureBox1
             // 
@@ -160,6 +154,7 @@
             this.listViewSum.TabIndex = 160;
             this.listViewSum.UseCompatibleStateImageBehavior = false;
             this.listViewSum.View = System.Windows.Forms.View.Details;
+            this.listViewSum.SelectedIndexChanged += new System.EventHandler(this.listViewSum_SelectedIndexChanged);
             // 
             // ID
             // 
@@ -186,6 +181,17 @@
             this.Balance.Text = "Текущий баланс";
             this.Balance.Width = 138;
             // 
+            // labelExtra
+            // 
+            this.labelExtra.AutoSize = true;
+            this.labelExtra.BackColor = System.Drawing.Color.Transparent;
+            this.labelExtra.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelExtra.Location = new System.Drawing.Point(81, 84);
+            this.labelExtra.Name = "labelExtra";
+            this.labelExtra.Size = new System.Drawing.Size(143, 25);
+            this.labelExtra.TabIndex = 158;
+            this.labelExtra.Text = "Выданный товар";
+            // 
             // labelShip
             // 
             this.labelShip.AutoSize = true;
@@ -197,16 +203,14 @@
             this.labelShip.TabIndex = 159;
             this.labelShip.Text = "Поставленный товар";
             // 
-            // labelExtra
+            // comboBoxShip
             // 
-            this.labelExtra.AutoSize = true;
-            this.labelExtra.BackColor = System.Drawing.Color.Transparent;
-            this.labelExtra.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelExtra.Location = new System.Drawing.Point(81, 84);
-            this.labelExtra.Name = "labelExtra";
-            this.labelExtra.Size = new System.Drawing.Size(143, 25);
-            this.labelExtra.TabIndex = 158;
-            this.labelExtra.Text = "Выданный товар";
+            this.comboBoxShip.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxShip.FormattingEnabled = true;
+            this.comboBoxShip.Location = new System.Drawing.Point(86, 51);
+            this.comboBoxShip.Name = "comboBoxShip";
+            this.comboBoxShip.Size = new System.Drawing.Size(158, 27);
+            this.comboBoxShip.TabIndex = 167;
             // 
             // FormSum
             // 
@@ -238,7 +242,6 @@
         #endregion
 
         private System.Windows.Forms.ComboBox comboBoxExtra;
-        private System.Windows.Forms.ComboBox comboBoxShip;
         private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonDel;
@@ -251,7 +254,8 @@
         private System.Windows.Forms.ColumnHeader Ship;
         private System.Windows.Forms.ColumnHeader Extra;
         private System.Windows.Forms.ColumnHeader Balance;
-        private System.Windows.Forms.Label labelShip;
         private System.Windows.Forms.Label labelExtra;
+        private System.Windows.Forms.Label labelShip;
+        private System.Windows.Forms.ComboBox comboBoxShip;
     }
 }

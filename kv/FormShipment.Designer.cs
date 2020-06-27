@@ -63,7 +63,6 @@
             this.dateTimePickerShip.Name = "dateTimePickerShip";
             this.dateTimePickerShip.Size = new System.Drawing.Size(158, 27);
             this.dateTimePickerShip.TabIndex = 164;
-            this.dateTimePickerShip.ValueChanged += new System.EventHandler(this.dateTimePickerShip_ValueChanged);
             // 
             // comboBoxProvider
             // 
@@ -73,7 +72,6 @@
             this.comboBoxProvider.Name = "comboBoxProvider";
             this.comboBoxProvider.Size = new System.Drawing.Size(158, 27);
             this.comboBoxProvider.TabIndex = 163;
-            this.comboBoxProvider.SelectedIndexChanged += new System.EventHandler(this.comboBoxProvider_SelectedIndexChanged);
             // 
             // comboBoxMaterial
             // 
@@ -95,7 +93,6 @@
             this.labelTotalPrice.Size = new System.Drawing.Size(126, 25);
             this.labelTotalPrice.TabIndex = 161;
             this.labelTotalPrice.Text = "Итоговая цена";
-            this.labelTotalPrice.Click += new System.EventHandler(this.labelTotalPrice_Click);
             // 
             // textBoxTotalPrice
             // 
@@ -106,7 +103,6 @@
             this.textBoxTotalPrice.Name = "textBoxTotalPrice";
             this.textBoxTotalPrice.Size = new System.Drawing.Size(160, 27);
             this.textBoxTotalPrice.TabIndex = 160;
-            this.textBoxTotalPrice.TextChanged += new System.EventHandler(this.textBoxTotalPrice_TextChanged);
             // 
             // labelPlace
             // 
@@ -118,7 +114,6 @@
             this.labelPlace.Size = new System.Drawing.Size(177, 25);
             this.labelPlace.TabIndex = 159;
             this.labelPlace.Text = "Место расположения";
-            this.labelPlace.Click += new System.EventHandler(this.labelPlace_Click);
             // 
             // textBoxPlace
             // 
@@ -128,7 +123,6 @@
             this.textBoxPlace.Name = "textBoxPlace";
             this.textBoxPlace.Size = new System.Drawing.Size(160, 27);
             this.textBoxPlace.TabIndex = 158;
-            this.textBoxPlace.TextChanged += new System.EventHandler(this.textBoxPlace_TextChanged);
             // 
             // labelMaterial
             // 
@@ -140,7 +134,6 @@
             this.labelMaterial.Size = new System.Drawing.Size(57, 25);
             this.labelMaterial.TabIndex = 157;
             this.labelMaterial.Text = "Товар";
-            this.labelMaterial.Click += new System.EventHandler(this.labelMaterial_Click);
             // 
             // labelQuant
             // 
@@ -152,7 +145,6 @@
             this.labelQuant.Size = new System.Drawing.Size(104, 25);
             this.labelQuant.TabIndex = 156;
             this.labelQuant.Text = "Количество";
-            this.labelQuant.Click += new System.EventHandler(this.labelQuant_Click);
             // 
             // textBoxQuantity
             // 
@@ -163,7 +155,6 @@
             this.textBoxQuantity.Name = "textBoxQuantity";
             this.textBoxQuantity.Size = new System.Drawing.Size(160, 27);
             this.textBoxQuantity.TabIndex = 155;
-            this.textBoxQuantity.TextChanged += new System.EventHandler(this.textBoxQuantity_TextChanged);
             // 
             // pictureBox1
             // 
@@ -174,7 +165,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 154;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // listViewShipment
             // 
@@ -246,7 +236,6 @@
             this.labelProvider.Size = new System.Drawing.Size(99, 25);
             this.labelProvider.TabIndex = 152;
             this.labelProvider.Text = "Поставщик";
-            this.labelProvider.Click += new System.EventHandler(this.labelProvider_Click);
             // 
             // labelDate
             // 
@@ -258,7 +247,6 @@
             this.labelDate.Size = new System.Drawing.Size(124, 25);
             this.labelDate.TabIndex = 151;
             this.labelDate.Text = "Дата поставки";
-            this.labelDate.Click += new System.EventHandler(this.labelDate_Click);
             // 
             // buttonEdit
             // 
@@ -332,6 +320,7 @@
             this.Name = "FormShipment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Поставка оборудования и материалов";
+            this.Load += new System.EventHandler(this.FormShipment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -89,6 +89,7 @@
             this.buttonEdit.TabIndex = 155;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonAdd
             // 
@@ -103,6 +104,7 @@
             this.buttonAdd.TabIndex = 154;
             this.buttonAdd.Text = "Создать";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonDel
             // 
@@ -117,6 +119,7 @@
             this.buttonDel.TabIndex = 153;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = false;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // pictureBox1
             // 
@@ -181,6 +184,7 @@
             this.listViewExtra.TabIndex = 148;
             this.listViewExtra.UseCompatibleStateImageBehavior = false;
             this.listViewExtra.View = System.Windows.Forms.View.Details;
+            this.listViewExtra.SelectedIndexChanged += new System.EventHandler(this.listViewExtra_SelectedIndexChanged);
             // 
             // ID
             // 
@@ -214,9 +218,9 @@
             this.labelMaterial.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelMaterial.Location = new System.Drawing.Point(83, 21);
             this.labelMaterial.Name = "labelMaterial";
-            this.labelMaterial.Size = new System.Drawing.Size(57, 25);
+            this.labelMaterial.Size = new System.Drawing.Size(127, 25);
             this.labelMaterial.TabIndex = 147;
-            this.labelMaterial.Text = "Товар";
+            this.labelMaterial.Text = "Выдача товара";
             // 
             // labelAgent
             // 
