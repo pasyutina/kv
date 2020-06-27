@@ -57,8 +57,8 @@
             this.textBoxMiddleName = new System.Windows.Forms.TextBox();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.labelDepart = new System.Windows.Forms.Label();
-            this.textBoxDepart = new System.Windows.Forms.TextBox();
             this.Department = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.comboBoxDepart = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -336,18 +336,22 @@
             this.labelDepart.TabIndex = 137;
             this.labelDepart.Text = "Отдел";
             // 
-            // textBoxDepart
-            // 
-            this.textBoxDepart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxDepart.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxDepart.Location = new System.Drawing.Point(85, 465);
-            this.textBoxDepart.Name = "textBoxDepart";
-            this.textBoxDepart.Size = new System.Drawing.Size(160, 29);
-            this.textBoxDepart.TabIndex = 136;
-            // 
             // Department
             // 
             this.Department.Text = "Отдел";
+            // 
+            // comboBoxDepart
+            // 
+            this.comboBoxDepart.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxDepart.FormattingEnabled = true;
+            this.comboBoxDepart.Items.AddRange(new object[] {
+            "Хайтек",
+            "IT-квантум",
+            "Промробоквантум"});
+            this.comboBoxDepart.Location = new System.Drawing.Point(86, 464);
+            this.comboBoxDepart.Name = "comboBoxDepart";
+            this.comboBoxDepart.Size = new System.Drawing.Size(158, 27);
+            this.comboBoxDepart.TabIndex = 158;
             // 
             // FormAgent
             // 
@@ -355,8 +359,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::kv.Properties.Resources.BG_for_IS;
             this.ClientSize = new System.Drawing.Size(953, 609);
+            this.Controls.Add(this.comboBoxDepart);
             this.Controls.Add(this.labelDepart);
-            this.Controls.Add(this.textBoxDepart);
             this.Controls.Add(this.labelSurname);
             this.Controls.Add(this.textBoxSurname);
             this.Controls.Add(this.buttonEdit);
@@ -416,7 +420,7 @@
         private System.Windows.Forms.TextBox textBoxMiddleName;
         private System.Windows.Forms.TextBox textBoxPhone;
         private System.Windows.Forms.Label labelDepart;
-        private System.Windows.Forms.TextBox textBoxDepart;
         private System.Windows.Forms.ColumnHeader Department;
+        private System.Windows.Forms.ComboBox comboBoxDepart;
     }
 }

@@ -70,7 +70,7 @@ namespace kv
                 agentSet.Phone = textBoxPhone.Text;
                 agentSet.Email = textBoxEmail.Text;
                 agentSet.Position = textBoxPosition.Text;
-               
+                agentSet.Department = comboBoxDepart.Text;
                 if (textBoxTerm.Text != "")
                 {
                     agentSet.Term = Convert.ToInt32(textBoxTerm.Text);
@@ -103,6 +103,7 @@ namespace kv
                     agentSet.Phone = textBoxPhone.Text;
                     agentSet.Email = textBoxEmail.Text;
                     agentSet.Position = textBoxPosition.Text;
+                    agentSet.Department = comboBoxDepart.Text;
                     if (textBoxTerm.Text != "")
                     {
                         agentSet.Term = Convert.ToInt32(textBoxTerm.Text);
