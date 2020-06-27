@@ -16,5 +16,10 @@ namespace kv
         {
             InitializeComponent();
         }
+
+        private void buttonEnter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -92,6 +92,7 @@
             this.buttonEnter.TabIndex = 132;
             this.buttonEnter.Text = "Войти";
             this.buttonEnter.UseVisualStyleBackColor = false;
+            this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
             // pictureBox1
             // 
