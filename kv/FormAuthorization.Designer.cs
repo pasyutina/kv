@@ -41,7 +41,7 @@
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBoxPassword.Location = new System.Drawing.Point(165, 135);
+            this.textBoxPassword.Location = new System.Drawing.Point(106, 131);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(188, 23);
             this.textBoxPassword.TabIndex = 23;
@@ -50,7 +50,7 @@
             // textBoxLogin
             // 
             this.textBoxLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBoxLogin.Location = new System.Drawing.Point(165, 97);
+            this.textBoxLogin.Location = new System.Drawing.Point(106, 93);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(188, 23);
             this.textBoxLogin.TabIndex = 21;
@@ -61,7 +61,7 @@
             this.labelLogin.BackColor = System.Drawing.Color.Transparent;
             this.labelLogin.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelLogin.ForeColor = System.Drawing.Color.Black;
-            this.labelLogin.Location = new System.Drawing.Point(75, 97);
+            this.labelLogin.Location = new System.Drawing.Point(16, 93);
             this.labelLogin.Name = "labelLogin";
             this.labelLogin.Size = new System.Drawing.Size(60, 25);
             this.labelLogin.TabIndex = 20;
@@ -73,7 +73,7 @@
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
             this.labelPassword.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPassword.ForeColor = System.Drawing.Color.Black;
-            this.labelPassword.Location = new System.Drawing.Point(75, 131);
+            this.labelPassword.Location = new System.Drawing.Point(16, 127);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(68, 25);
             this.labelPassword.TabIndex = 25;
@@ -86,7 +86,7 @@
             this.buttonEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEnter.Font = new System.Drawing.Font("BankGothic RUSS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEnter.ForeColor = System.Drawing.Color.White;
-            this.buttonEnter.Location = new System.Drawing.Point(112, 180);
+            this.buttonEnter.Location = new System.Drawing.Point(53, 176);
             this.buttonEnter.Name = "buttonEnter";
             this.buttonEnter.Size = new System.Drawing.Size(202, 44);
             this.buttonEnter.TabIndex = 132;
@@ -97,7 +97,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::kv.Properties.Resources.ЛОГО_Кванториум_Цветной;
-            this.pictureBox1.Location = new System.Drawing.Point(139, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(80, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(149, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,7 +109,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::kv.Properties.Resources.BG_for_IS;
-            this.ClientSize = new System.Drawing.Size(421, 258);
+            this.ClientSize = new System.Drawing.Size(310, 235);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonEnter);
             this.Controls.Add(this.labelPassword);

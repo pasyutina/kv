@@ -5,7 +5,7 @@ namespace kv
 {
     static class Program
     {
-        public static KvntEntities1 kv = new KvntEntities1();
+        public static KvntEntities2 kv = new KvntEntities2();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
