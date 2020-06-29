@@ -15,7 +15,6 @@ namespace kv
         public FormSum()
         {
             InitializeComponent();
-            ShowShipment();
             ShowExtradit();
             ShowSum();
         }
@@ -25,9 +24,11 @@ namespace kv
                 comboBoxExtra.Items.Clear();
                 foreach (Extradition extra in Program.kv.Extradition)
                 {
-                    string[] item = { extra.Id.ToString() + extra.Id_agent + extra.DateOfUssue + extra.Quantity};
+                    string[] item = { extra.Id.ToString() + ". " +
+                        extra.Shipment.Material.Name + " " +
+                         ", " + extra.Quantity};
+                    comboBoxExtra.Items.Add(string.Join("", item));
                 }
-         
         }
         void ShowSum()
         {
@@ -37,9 +38,8 @@ namespace kv
                 ListViewItem item = new ListViewItem(new string[]
                 {
                     sum.Id.ToString(),
-                    sum.Extradition.Shipment.Material.ToString(),
+                    sum.Extradition.Shipment.Material.Name+ ", " +
                     sum.Extradition.Quantity.ToString(),
-                    sum.Extradition.Shipment.Quantity.ToString(),
                     sum.Current_balance.ToString()
                 }) ;
                 item.Tag = sum;
@@ -50,52 +50,82 @@ namespace kv
         }
         private void listViewSum_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (listViewSum.SelectedItems.Count == 1)
+            {
+                SummaryList sum = listViewSum.SelectedItems[0].Tag as SummaryList;
+                comboBoxExtra.SelectedIndex = comboBoxExtra.FindString(sum.Id_Extradition.ToString().Split('.')[0]);
+                textBoxBalance.Text = sum.Current_balance.ToString();
+            }
+            else
+            {
+                comboBoxExtra.SelectedItem = null;
+                textBoxBalance.Text = "";
+            }
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            if (comboBoxShip.SelectedItem != null && comboBoxExtra.SelectedItem != null
-                && textBoxBalance.Text != "")
+            try
             {
-                SummaryList sum = new SummaryList();
-                sum.Extradition.Shipment.Id_material = Convert.ToInt32(comboBoxShip.SelectedItem.ToString().Split('.')[0]);
-                sum.Id_Extradition = Convert.ToInt32(comboBoxExtra.SelectedItem.ToString().Split('.')[0]);
-                sum.Current_balance = Convert.ToInt32(textBoxBalance.Text);
-                Program.kv.SummaryList.Add(sum);
-                Program.kv.SaveChanges();
-                ShowSum();
+                if (comboBoxExtra.SelectedItem != null && textBoxBalance.Text != "")
+                {
+                    SummaryList sum = new SummaryList();
+                    sum.Id_Extradition = Convert.ToInt32(comboBoxExtra.SelectedItem.ToString().Split('.')[0]);
+                    
+                        sum.Current_balance = Convert.ToInt32(textBoxBalance.Text);
+                    
+                    Program.kv.SummaryList.Add(sum);
+                    Program.kv.SaveChanges();
+                    ShowSum();
+                }
+            }
+            catch (Exception a)
+            {
+                MessageBox.Show("" + a.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
-            if (listViewSum.SelectedItems.Count == 1)
+            try
             {
-                if (comboBoxShip.SelectedItem != null && comboBoxExtra.SelectedItem != null
-              && textBoxBalance.Text != "")
+                if (listViewSum.SelectedItems.Count == 1)
                 {
-                    SummaryList sum = listViewSum.SelectedItems[0].Tag as SummaryList;
-                    sum.Extradition.Shipment.Id_material = Convert.ToInt32(comboBoxShip.SelectedItem.ToString().Split('.')[0]);
-                    sum.Id_Extradition = Convert.ToInt32(comboBoxExtra.SelectedItem.ToString().Split('.')[0]);
-                    sum.Current_balance = Convert.ToInt32(textBoxBalance.Text);
-                    Program.kv.SaveChanges();
-                    ShowSum();
+                    if (comboBoxExtra.SelectedItem != null && textBoxBalance.Text != "")
+                    {
+                        SummaryList sum = listViewSum.SelectedItems[0].Tag as SummaryList;
+                        sum.Id_Extradition = Convert.ToInt32(comboBoxExtra.SelectedItem.ToString().Split('.')[0]);
+                        sum.Current_balance = Convert.ToInt32(textBoxBalance.Text);
+                        Program.kv.SaveChanges();
+                        ShowSum();
+                    }
                 }
+            }
+            catch (Exception a)
+            {
+                MessageBox.Show("" + a.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void buttonDel_Click(object sender, EventArgs e)
         {
-
-        }
-        void ShowShipment()
-        {
-            comboBoxShip.Items.Clear();
-            foreach (Shipment shipment in Program.kv.Shipment)
+            try
             {
-                string[] item = { shipment.Id.ToString() + shipment.Material + shipment.Provider + shipment.Date };
+                if (listViewSum.SelectedItems.Count == 1)
+                {
+                    SummaryList sum = listViewSum.SelectedItems[0].Tag as SummaryList;
+                    Program.kv.SummaryList.Remove(sum);
+                    Program.kv.SaveChanges();
+                    ShowSum();
+                }
+                comboBoxExtra.SelectedItem = null;
+                textBoxBalance.Text = "";
+            }
+            catch
+            {
+                MessageBox.Show("Невозможно удалить, эта запись используется!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
     }
 }

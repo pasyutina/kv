@@ -5,7 +5,7 @@ namespace kv
 {
     static class Program
     {
-        public static KvntEntities2 kv = new KvntEntities2();
+        public static KvntEntities kv = new KvntEntities();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -14,7 +14,7 @@ namespace kv
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+            Application.Run(new FormAuthorization());
         }
     }
 }

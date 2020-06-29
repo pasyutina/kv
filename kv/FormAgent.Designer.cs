@@ -51,13 +51,13 @@
             this.Email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Term = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Position = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Department = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.labelMiddleName = new System.Windows.Forms.Label();
             this.labelPhone = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxMiddleName = new System.Windows.Forms.TextBox();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.labelDepart = new System.Windows.Forms.Label();
-            this.Department = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.comboBoxDepart = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,20 +66,20 @@
             // 
             this.labelSurname.AutoSize = true;
             this.labelSurname.BackColor = System.Drawing.Color.Transparent;
-            this.labelSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSurname.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelSurname.Location = new System.Drawing.Point(84, 24);
             this.labelSurname.Name = "labelSurname";
-            this.labelSurname.Size = new System.Drawing.Size(91, 24);
+            this.labelSurname.Size = new System.Drawing.Size(86, 25);
             this.labelSurname.TabIndex = 135;
             this.labelSurname.Text = "Фамилия";
             // 
             // textBoxSurname
             // 
-            this.textBoxSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSurname.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxSurname.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBoxSurname.Location = new System.Drawing.Point(85, 52);
             this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(160, 29);
+            this.textBoxSurname.Size = new System.Drawing.Size(160, 33);
             this.textBoxSurname.TabIndex = 134;
             // 
             // buttonEdit
@@ -131,10 +131,10 @@
             // 
             this.labelFirstName.AutoSize = true;
             this.labelFirstName.BackColor = System.Drawing.Color.Transparent;
-            this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFirstName.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFirstName.Location = new System.Drawing.Point(84, 82);
             this.labelFirstName.Name = "labelFirstName";
-            this.labelFirstName.Size = new System.Drawing.Size(46, 24);
+            this.labelFirstName.Size = new System.Drawing.Size(44, 25);
             this.labelFirstName.TabIndex = 129;
             this.labelFirstName.Text = "Имя";
             // 
@@ -142,9 +142,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::kv.Properties.Resources.ЛОГО_Кванториум_Цветной;
-            this.pictureBox1.Location = new System.Drawing.Point(85, 500);
+            this.pictureBox1.Location = new System.Drawing.Point(91, 523);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 103);
+            this.pictureBox1.Size = new System.Drawing.Size(156, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 128;
             this.pictureBox1.TabStop = false;
@@ -153,30 +153,30 @@
             // 
             this.labelPosition.AutoSize = true;
             this.labelPosition.BackColor = System.Drawing.Color.Transparent;
-            this.labelPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPosition.Location = new System.Drawing.Point(82, 375);
+            this.labelPosition.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPosition.Location = new System.Drawing.Point(85, 394);
             this.labelPosition.Name = "labelPosition";
-            this.labelPosition.Size = new System.Drawing.Size(112, 24);
+            this.labelPosition.Size = new System.Drawing.Size(101, 25);
             this.labelPosition.TabIndex = 127;
             this.labelPosition.Text = "Должность";
             // 
             // textBoxPosition
             // 
-            this.textBoxPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPosition.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxPosition.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxPosition.Location = new System.Drawing.Point(85, 403);
+            this.textBoxPosition.Location = new System.Drawing.Point(88, 422);
             this.textBoxPosition.Name = "textBoxPosition";
-            this.textBoxPosition.Size = new System.Drawing.Size(160, 29);
+            this.textBoxPosition.Size = new System.Drawing.Size(160, 33);
             this.textBoxPosition.TabIndex = 126;
             // 
             // labelTerm
             // 
             this.labelTerm.AutoSize = true;
             this.labelTerm.BackColor = System.Drawing.Color.Transparent;
-            this.labelTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTerm.Location = new System.Drawing.Point(82, 316);
+            this.labelTerm.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTerm.Location = new System.Drawing.Point(84, 331);
             this.labelTerm.Name = "labelTerm";
-            this.labelTerm.Size = new System.Drawing.Size(125, 24);
+            this.labelTerm.Size = new System.Drawing.Size(108, 25);
             this.labelTerm.TabIndex = 124;
             this.labelTerm.Text = "Срок работы";
             // 
@@ -184,30 +184,30 @@
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.BackColor = System.Drawing.Color.Transparent;
-            this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelEmail.Location = new System.Drawing.Point(84, 257);
+            this.labelEmail.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEmail.Location = new System.Drawing.Point(86, 266);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(64, 24);
+            this.labelEmail.Size = new System.Drawing.Size(59, 25);
             this.labelEmail.TabIndex = 123;
             this.labelEmail.Text = "Почта";
             // 
             // textBoxTerm
             // 
-            this.textBoxTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxTerm.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxTerm.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxTerm.Location = new System.Drawing.Point(85, 344);
+            this.textBoxTerm.Location = new System.Drawing.Point(87, 359);
             this.textBoxTerm.Name = "textBoxTerm";
-            this.textBoxTerm.Size = new System.Drawing.Size(160, 29);
+            this.textBoxTerm.Size = new System.Drawing.Size(160, 33);
             this.textBoxTerm.TabIndex = 122;
             // 
             // textBoxEmail
             // 
             this.textBoxEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxEmail.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxEmail.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxEmail.Location = new System.Drawing.Point(85, 285);
+            this.textBoxEmail.Location = new System.Drawing.Point(87, 294);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(160, 29);
+            this.textBoxEmail.Size = new System.Drawing.Size(160, 33);
             this.textBoxEmail.TabIndex = 121;
             // 
             // listViewAgent
@@ -223,7 +223,7 @@
             this.Term,
             this.Position,
             this.Department});
-            this.listViewAgent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listViewAgent.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewAgent.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.listViewAgent.FullRowSelect = true;
             this.listViewAgent.GridLines = true;
@@ -276,14 +276,18 @@
             this.Position.Text = "Должность";
             this.Position.Width = 95;
             // 
+            // Department
+            // 
+            this.Department.Text = "Отдел";
+            // 
             // labelMiddleName
             // 
             this.labelMiddleName.AutoSize = true;
             this.labelMiddleName.BackColor = System.Drawing.Color.Transparent;
-            this.labelMiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelMiddleName.Location = new System.Drawing.Point(84, 137);
+            this.labelMiddleName.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMiddleName.Location = new System.Drawing.Point(84, 143);
             this.labelMiddleName.Name = "labelMiddleName";
-            this.labelMiddleName.Size = new System.Drawing.Size(98, 24);
+            this.labelMiddleName.Size = new System.Drawing.Size(85, 25);
             this.labelMiddleName.TabIndex = 119;
             this.labelMiddleName.Text = "Отчество";
             // 
@@ -291,66 +295,62 @@
             // 
             this.labelPhone.AutoSize = true;
             this.labelPhone.BackColor = System.Drawing.Color.Transparent;
-            this.labelPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPhone.Location = new System.Drawing.Point(82, 199);
+            this.labelPhone.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPhone.Location = new System.Drawing.Point(82, 205);
             this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(90, 24);
+            this.labelPhone.Size = new System.Drawing.Size(79, 25);
             this.labelPhone.TabIndex = 118;
             this.labelPhone.Text = "Телефон";
             // 
             // textBoxName
             // 
-            this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxName.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxName.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBoxName.Location = new System.Drawing.Point(85, 110);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(160, 29);
+            this.textBoxName.Size = new System.Drawing.Size(160, 33);
             this.textBoxName.TabIndex = 117;
             // 
             // textBoxMiddleName
             // 
-            this.textBoxMiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxMiddleName.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxMiddleName.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxMiddleName.Location = new System.Drawing.Point(85, 165);
+            this.textBoxMiddleName.Location = new System.Drawing.Point(85, 171);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
-            this.textBoxMiddleName.Size = new System.Drawing.Size(160, 29);
+            this.textBoxMiddleName.Size = new System.Drawing.Size(160, 33);
             this.textBoxMiddleName.TabIndex = 116;
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPhone.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxPhone.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxPhone.Location = new System.Drawing.Point(85, 227);
+            this.textBoxPhone.Location = new System.Drawing.Point(85, 233);
             this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(160, 29);
+            this.textBoxPhone.Size = new System.Drawing.Size(160, 33);
             this.textBoxPhone.TabIndex = 115;
             // 
             // labelDepart
             // 
             this.labelDepart.AutoSize = true;
             this.labelDepart.BackColor = System.Drawing.Color.Transparent;
-            this.labelDepart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelDepart.Location = new System.Drawing.Point(82, 437);
+            this.labelDepart.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDepart.Location = new System.Drawing.Point(84, 457);
             this.labelDepart.Name = "labelDepart";
-            this.labelDepart.Size = new System.Drawing.Size(68, 24);
+            this.labelDepart.Size = new System.Drawing.Size(59, 25);
             this.labelDepart.TabIndex = 137;
             this.labelDepart.Text = "Отдел";
             // 
-            // Department
-            // 
-            this.Department.Text = "Отдел";
-            // 
             // comboBoxDepart
             // 
-            this.comboBoxDepart.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxDepart.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxDepart.FormattingEnabled = true;
             this.comboBoxDepart.Items.AddRange(new object[] {
             "Хайтек",
             "IT-квантум",
             "Промробоквантум"});
-            this.comboBoxDepart.Location = new System.Drawing.Point(86, 464);
+            this.comboBoxDepart.Location = new System.Drawing.Point(88, 484);
             this.comboBoxDepart.Name = "comboBoxDepart";
-            this.comboBoxDepart.Size = new System.Drawing.Size(158, 27);
+            this.comboBoxDepart.Size = new System.Drawing.Size(158, 33);
             this.comboBoxDepart.TabIndex = 158;
             // 
             // FormAgent

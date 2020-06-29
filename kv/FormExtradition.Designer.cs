@@ -52,28 +52,28 @@
             // 
             // dateTimePickerEx
             // 
-            this.dateTimePickerEx.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePickerEx.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateTimePickerEx.Location = new System.Drawing.Point(86, 170);
             this.dateTimePickerEx.Name = "dateTimePickerEx";
-            this.dateTimePickerEx.Size = new System.Drawing.Size(158, 27);
+            this.dateTimePickerEx.Size = new System.Drawing.Size(160, 33);
             this.dateTimePickerEx.TabIndex = 158;
             // 
             // comboBoxAgent
             // 
-            this.comboBoxAgent.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxAgent.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxAgent.FormattingEnabled = true;
             this.comboBoxAgent.Location = new System.Drawing.Point(86, 111);
             this.comboBoxAgent.Name = "comboBoxAgent";
-            this.comboBoxAgent.Size = new System.Drawing.Size(158, 27);
+            this.comboBoxAgent.Size = new System.Drawing.Size(160, 33);
             this.comboBoxAgent.TabIndex = 157;
             // 
             // comboBoxMaterial
             // 
-            this.comboBoxMaterial.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxMaterial.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxMaterial.FormattingEnabled = true;
             this.comboBoxMaterial.Location = new System.Drawing.Point(86, 50);
             this.comboBoxMaterial.Name = "comboBoxMaterial";
-            this.comboBoxMaterial.Size = new System.Drawing.Size(158, 27);
+            this.comboBoxMaterial.Size = new System.Drawing.Size(160, 33);
             this.comboBoxMaterial.TabIndex = 156;
             // 
             // buttonEdit
@@ -137,7 +137,7 @@
             this.labelQuant.AutoSize = true;
             this.labelQuant.BackColor = System.Drawing.Color.Transparent;
             this.labelQuant.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelQuant.Location = new System.Drawing.Point(81, 200);
+            this.labelQuant.Location = new System.Drawing.Point(79, 201);
             this.labelQuant.Name = "labelQuant";
             this.labelQuant.Size = new System.Drawing.Size(104, 25);
             this.labelQuant.TabIndex = 151;
@@ -148,7 +148,7 @@
             this.labelDate.AutoSize = true;
             this.labelDate.BackColor = System.Drawing.Color.Transparent;
             this.labelDate.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelDate.Location = new System.Drawing.Point(83, 141);
+            this.labelDate.Location = new System.Drawing.Point(81, 142);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(109, 25);
             this.labelDate.TabIndex = 150;
@@ -156,11 +156,11 @@
             // 
             // textBoxQuant
             // 
-            this.textBoxQuant.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxQuant.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxQuant.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBoxQuant.Location = new System.Drawing.Point(84, 228);
             this.textBoxQuant.Name = "textBoxQuant";
-            this.textBoxQuant.Size = new System.Drawing.Size(160, 27);
+            this.textBoxQuant.Size = new System.Drawing.Size(160, 33);
             this.textBoxQuant.TabIndex = 149;
             // 
             // listViewExtra
@@ -172,7 +172,7 @@
             this.Agent,
             this.Date,
             this.Quantity});
-            this.listViewExtra.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listViewExtra.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewExtra.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.listViewExtra.FullRowSelect = true;
             this.listViewExtra.GridLines = true;
@@ -216,7 +216,7 @@
             this.labelMaterial.AutoSize = true;
             this.labelMaterial.BackColor = System.Drawing.Color.Transparent;
             this.labelMaterial.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelMaterial.Location = new System.Drawing.Point(83, 21);
+            this.labelMaterial.Location = new System.Drawing.Point(81, 22);
             this.labelMaterial.Name = "labelMaterial";
             this.labelMaterial.Size = new System.Drawing.Size(127, 25);
             this.labelMaterial.TabIndex = 147;
@@ -227,7 +227,7 @@
             this.labelAgent.AutoSize = true;
             this.labelAgent.BackColor = System.Drawing.Color.Transparent;
             this.labelAgent.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelAgent.Location = new System.Drawing.Point(81, 83);
+            this.labelAgent.Location = new System.Drawing.Point(79, 84);
             this.labelAgent.Name = "labelAgent";
             this.labelAgent.Size = new System.Drawing.Size(94, 25);
             this.labelAgent.TabIndex = 146;

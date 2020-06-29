@@ -32,5 +32,7 @@ namespace kv
         public virtual ICollection<Extradition> Extradition { get; set; }
         public virtual Material Material { get; set; }
         public virtual Provider Provider { get; set; }
+        public virtual Shipment Shipment1 { get; set; }
+        public virtual Shipment Shipment2 { get; set; }
     }
 }

@@ -99,9 +99,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::kv.Properties.Resources.ЛОГО_Кванториум_Цветной;
-            this.pictureBox1.Location = new System.Drawing.Point(82, 261);
+            this.pictureBox1.Location = new System.Drawing.Point(82, 278);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 119);
+            this.pictureBox1.Size = new System.Drawing.Size(162, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 139;
             this.pictureBox1.TabStop = false;
@@ -111,7 +111,7 @@
             this.labelCost.AutoSize = true;
             this.labelCost.BackColor = System.Drawing.Color.Transparent;
             this.labelCost.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCost.Location = new System.Drawing.Point(81, 200);
+            this.labelCost.Location = new System.Drawing.Point(81, 211);
             this.labelCost.Name = "labelCost";
             this.labelCost.Size = new System.Drawing.Size(151, 25);
             this.labelCost.TabIndex = 138;
@@ -122,7 +122,7 @@
             this.labelMiddleName.AutoSize = true;
             this.labelMiddleName.BackColor = System.Drawing.Color.Transparent;
             this.labelMiddleName.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelMiddleName.Location = new System.Drawing.Point(83, 141);
+            this.labelMiddleName.Location = new System.Drawing.Point(83, 147);
             this.labelMiddleName.Name = "labelMiddleName";
             this.labelMiddleName.Size = new System.Drawing.Size(85, 25);
             this.labelMiddleName.TabIndex = 137;
@@ -130,21 +130,21 @@
             // 
             // textBoxCost
             // 
-            this.textBoxCost.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxCost.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxCost.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxCost.Location = new System.Drawing.Point(84, 228);
+            this.textBoxCost.Location = new System.Drawing.Point(84, 239);
             this.textBoxCost.Name = "textBoxCost";
-            this.textBoxCost.Size = new System.Drawing.Size(160, 27);
+            this.textBoxCost.Size = new System.Drawing.Size(160, 33);
             this.textBoxCost.TabIndex = 136;
             // 
             // textBoxMiddleName
             // 
             this.textBoxMiddleName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxMiddleName.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxMiddleName.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxMiddleName.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxMiddleName.Location = new System.Drawing.Point(84, 169);
+            this.textBoxMiddleName.Location = new System.Drawing.Point(84, 175);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
-            this.textBoxMiddleName.Size = new System.Drawing.Size(160, 27);
+            this.textBoxMiddleName.Size = new System.Drawing.Size(160, 33);
             this.textBoxMiddleName.TabIndex = 135;
             // 
             // listViewProvider
@@ -156,7 +156,7 @@
             this.FirstName,
             this.MiddleName,
             this.Cost});
-            this.listViewProvider.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listViewProvider.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewProvider.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.listViewProvider.FullRowSelect = true;
             this.listViewProvider.GridLines = true;
@@ -219,20 +219,20 @@
             // 
             // textBoxSurName
             // 
-            this.textBoxSurName.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSurName.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxSurName.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBoxSurName.Location = new System.Drawing.Point(84, 49);
             this.textBoxSurName.Name = "textBoxSurName";
-            this.textBoxSurName.Size = new System.Drawing.Size(160, 27);
+            this.textBoxSurName.Size = new System.Drawing.Size(160, 33);
             this.textBoxSurName.TabIndex = 131;
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxFirstName.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxFirstName.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBoxFirstName.Location = new System.Drawing.Point(84, 111);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(160, 27);
+            this.textBoxFirstName.Size = new System.Drawing.Size(160, 33);
             this.textBoxFirstName.TabIndex = 130;
             // 
             // FormProvider

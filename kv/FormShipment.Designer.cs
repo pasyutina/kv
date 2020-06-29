@@ -58,37 +58,36 @@
             // 
             // dateTimePickerShip
             // 
-            this.dateTimePickerShip.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePickerShip.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateTimePickerShip.Location = new System.Drawing.Point(76, 182);
             this.dateTimePickerShip.Name = "dateTimePickerShip";
-            this.dateTimePickerShip.Size = new System.Drawing.Size(158, 27);
+            this.dateTimePickerShip.Size = new System.Drawing.Size(158, 33);
             this.dateTimePickerShip.TabIndex = 164;
             // 
             // comboBoxProvider
             // 
-            this.comboBoxProvider.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxProvider.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxProvider.FormattingEnabled = true;
             this.comboBoxProvider.Location = new System.Drawing.Point(76, 123);
             this.comboBoxProvider.Name = "comboBoxProvider";
-            this.comboBoxProvider.Size = new System.Drawing.Size(158, 27);
+            this.comboBoxProvider.Size = new System.Drawing.Size(158, 33);
             this.comboBoxProvider.TabIndex = 163;
             // 
             // comboBoxMaterial
             // 
-            this.comboBoxMaterial.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxMaterial.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxMaterial.FormattingEnabled = true;
             this.comboBoxMaterial.Location = new System.Drawing.Point(76, 62);
             this.comboBoxMaterial.Name = "comboBoxMaterial";
-            this.comboBoxMaterial.Size = new System.Drawing.Size(158, 27);
+            this.comboBoxMaterial.Size = new System.Drawing.Size(158, 33);
             this.comboBoxMaterial.TabIndex = 162;
-            this.comboBoxMaterial.SelectedIndexChanged += new System.EventHandler(this.comboBoxMaterial_SelectedIndexChanged);
             // 
             // labelTotalPrice
             // 
             this.labelTotalPrice.AutoSize = true;
             this.labelTotalPrice.BackColor = System.Drawing.Color.Transparent;
             this.labelTotalPrice.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTotalPrice.Location = new System.Drawing.Point(73, 332);
+            this.labelTotalPrice.Location = new System.Drawing.Point(73, 337);
             this.labelTotalPrice.Name = "labelTotalPrice";
             this.labelTotalPrice.Size = new System.Drawing.Size(126, 25);
             this.labelTotalPrice.TabIndex = 161;
@@ -97,11 +96,11 @@
             // textBoxTotalPrice
             // 
             this.textBoxTotalPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxTotalPrice.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxTotalPrice.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxTotalPrice.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxTotalPrice.Location = new System.Drawing.Point(76, 360);
+            this.textBoxTotalPrice.Location = new System.Drawing.Point(76, 365);
             this.textBoxTotalPrice.Name = "textBoxTotalPrice";
-            this.textBoxTotalPrice.Size = new System.Drawing.Size(160, 27);
+            this.textBoxTotalPrice.Size = new System.Drawing.Size(160, 33);
             this.textBoxTotalPrice.TabIndex = 160;
             // 
             // labelPlace
@@ -117,11 +116,11 @@
             // 
             // textBoxPlace
             // 
-            this.textBoxPlace.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPlace.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxPlace.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBoxPlace.Location = new System.Drawing.Point(76, 301);
             this.textBoxPlace.Name = "textBoxPlace";
-            this.textBoxPlace.Size = new System.Drawing.Size(160, 27);
+            this.textBoxPlace.Size = new System.Drawing.Size(160, 33);
             this.textBoxPlace.TabIndex = 158;
             // 
             // labelMaterial
@@ -149,19 +148,20 @@
             // textBoxQuantity
             // 
             this.textBoxQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxQuantity.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxQuantity.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxQuantity.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBoxQuantity.Location = new System.Drawing.Point(76, 240);
             this.textBoxQuantity.Name = "textBoxQuantity";
-            this.textBoxQuantity.Size = new System.Drawing.Size(160, 27);
+            this.textBoxQuantity.Size = new System.Drawing.Size(160, 33);
             this.textBoxQuantity.TabIndex = 155;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(78, 393);
+            this.pictureBox1.Image = global::kv.Properties.Resources.ЛОГО_Кванториум_Цветной;
+            this.pictureBox1.Location = new System.Drawing.Point(78, 404);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(158, 119);
+            this.pictureBox1.Size = new System.Drawing.Size(158, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 154;
             this.pictureBox1.TabStop = false;
@@ -177,7 +177,7 @@
             this.Quantity,
             this.Place,
             this.TotalPrice});
-            this.listViewShipment.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listViewShipment.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewShipment.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.listViewShipment.FullRowSelect = true;
             this.listViewShipment.GridLines = true;
@@ -231,7 +231,7 @@
             this.labelProvider.AutoSize = true;
             this.labelProvider.BackColor = System.Drawing.Color.Transparent;
             this.labelProvider.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelProvider.Location = new System.Drawing.Point(75, 91);
+            this.labelProvider.Location = new System.Drawing.Point(73, 98);
             this.labelProvider.Name = "labelProvider";
             this.labelProvider.Size = new System.Drawing.Size(99, 25);
             this.labelProvider.TabIndex = 152;
@@ -242,7 +242,7 @@
             this.labelDate.AutoSize = true;
             this.labelDate.BackColor = System.Drawing.Color.Transparent;
             this.labelDate.Font = new System.Drawing.Font("Ropa Sans SC PTT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelDate.Location = new System.Drawing.Point(73, 153);
+            this.labelDate.Location = new System.Drawing.Point(73, 159);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(124, 25);
             this.labelDate.TabIndex = 151;
@@ -320,7 +320,6 @@
             this.Name = "FormShipment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Поставка оборудования и материалов";
-            this.Load += new System.EventHandler(this.FormShipment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

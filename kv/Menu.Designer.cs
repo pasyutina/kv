@@ -36,6 +36,7 @@
             this.buttonProvider = new System.Windows.Forms.Button();
             this.buttonAgents = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelHello = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,12 +141,23 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // labelHello
+            // 
+            this.labelHello.AutoSize = true;
+            this.labelHello.Font = new System.Drawing.Font("BankGothic RUSS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelHello.Location = new System.Drawing.Point(867, 27);
+            this.labelHello.Name = "labelHello";
+            this.labelHello.Size = new System.Drawing.Size(235, 19);
+            this.labelHello.TabIndex = 35;
+            this.labelHello.Text = "Приветствую тебя,";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::kv.Properties.Resources.BG_for_IS;
             this.ClientSize = new System.Drawing.Size(1370, 491);
+            this.Controls.Add(this.labelHello);
             this.Controls.Add(this.buttonSum);
             this.Controls.Add(this.buttonNal);
             this.Controls.Add(this.buttonExtra);
@@ -157,8 +169,10 @@
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Меню";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -171,6 +185,7 @@
         private System.Windows.Forms.Button buttonProvider;
         private System.Windows.Forms.Button buttonAgents;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelHello;
     }
 }
 

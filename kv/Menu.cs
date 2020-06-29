@@ -1,20 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace kv
 {
     public partial class Menu : Form
     {
-        public Menu()
+        private FormAuthorization formAuthorization;
+        public Menu(FormAuthorization formAuthorization)
         {
             InitializeComponent();
+            this.formAuthorization = formAuthorization;
+            if (FormAuthorization.users.type == "agent")
+            {
+                buttonAgents.Enabled = false;
+                buttonProvider.Enabled = false;
+                buttonPriem.Enabled = false;
+                buttonNal.Enabled = false;
+            }
+            labelHello.Text = "Приветствую тебя, " + FormAuthorization.users.login;
         }
 
         private void buttonAgents_Click(object sender, EventArgs e)
@@ -51,6 +54,11 @@ namespace kv
         {
             Form summary = new FormSum();
             summary.Show();
+        }
+
+        private void Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formAuthorization.Show();
         }
     }
 }

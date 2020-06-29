@@ -17,6 +17,6 @@ namespace kv
         public int Id { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-        public Nullable<int> Type { get; set; }
+        public string Type { get; set; }
     }
 }

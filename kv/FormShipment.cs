@@ -16,8 +16,28 @@ namespace kv
         {
             InitializeComponent();
             ShowShipment();
+            ShowMaterial();
+            ShowProvider();
         }
 
+        void ShowMaterial()
+        {
+            comboBoxMaterial.Items.Clear();
+            foreach (Material material in Program.kv.Material)
+            {
+                string[] item = { material.Id.ToString() + ". "+ material.Name + material.InventoryNumber.ToString() + material.Unit.ToString() + material.Price.ToString() };
+                comboBoxMaterial.Items.Add(string.Join("", item));
+            }
+        }
+        void ShowProvider()
+        {
+            comboBoxProvider.Items.Clear();
+            foreach (Provider provider in Program.kv.Provider)
+            {
+                string[] item = { provider.Id.ToString() + ". " + provider.Surname + " " + provider.Name.Remove(1) + "."+ provider.MiddleName.Remove(1) + "."};
+                comboBoxProvider.Items.Add(string.Join("", item));
+            }
+        }
         void ShowShipment()
         {
             listViewShipment.Items.Clear();
@@ -25,7 +45,7 @@ namespace kv
             {
                 ListViewItem item = new ListViewItem(new string[]
                 {
-                    ship.Id.ToString(), ship.Id_material.ToString(), ship.Id_provider.ToString(), 
+                    ship.Id.ToString(), ship.Material.Name, ship.Provider.Surname + " " + ship.Provider.Name.Remove(1) + ". " + ship.Provider.MiddleName.Remove(1), 
                     ship.Date.ToString(), ship.Quantity.ToString(), ship.Place, 
                     ship.TotalPrice.ToString()
                 });
@@ -37,8 +57,10 @@ namespace kv
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
-            if (listViewShipment.SelectedItems.Count == 1)
+            try
             {
+                if (listViewShipment.SelectedItems.Count == 1)
+                {
                 if (comboBoxMaterial.SelectedItem != null && comboBoxProvider.SelectedItem != null
                && textBoxQuantity.Text != "")
                 {
@@ -46,44 +68,79 @@ namespace kv
                     ship.Id_material = Convert.ToInt32(comboBoxMaterial.SelectedItem.ToString().Split('.')[0]);
                     ship.Id_provider = Convert.ToInt32(comboBoxProvider.SelectedItem.ToString().Split('.')[0]);
                     ship.Date = dateTimePickerShip.Value;
-                    ship.Quantity = Convert.ToInt32(textBoxQuantity.Text);
-                    ship.Place = textBoxPlace.Text;
-                    ship.TotalPrice = Convert.ToInt32(textBoxTotalPrice.Text);
-                    Program.kv.SaveChanges();
+                        if (textBoxQuantity.Text != "")
+                        {
+                            ship.Quantity = Convert.ToInt32(textBoxQuantity.Text);
+                        }
+                        ship.Place = textBoxPlace.Text;
+                        if (textBoxTotalPrice.Text != "")
+                        {
+                            ship.TotalPrice = Convert.ToInt32(textBoxTotalPrice.Text);
+                        }
+                        Program.kv.SaveChanges();
                     ShowShipment();
                 }
+                }
+            }
+            catch (Exception a)
+            {
+                MessageBox.Show("" + a.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            if (comboBoxMaterial.SelectedItem != null && comboBoxProvider.SelectedItem != null
-                && textBoxQuantity.Text != "")
+            try
             {
+                if (comboBoxMaterial.SelectedItem != null && comboBoxProvider.SelectedItem != null
+                && textBoxQuantity.Text != "")
+                {
                 Shipment ship = new Shipment();
-                ship.Material.Name = comboBoxMaterial.SelectedItem.ToString().Split('.')[0];
-                ship.Provider.Name = comboBoxProvider.SelectedItem.ToString().Split('.')[0];
+                ship.Id_material = Convert.ToInt32(comboBoxMaterial.SelectedItem.ToString().Split('.')[0]);
+                ship.Id_provider = Convert.ToInt32(comboBoxProvider.SelectedItem.ToString().Split('.')[0]);
                 ship.Date = dateTimePickerShip.Value;
-                ship.Quantity = Convert.ToInt32(textBoxQuantity.Text);
+                    if (textBoxQuantity.Text != "")
+                    {
+                        ship.Quantity = Convert.ToInt32(textBoxQuantity.Text);
+                    }
+                ship.Place = textBoxPlace.Text;
+                if (textBoxTotalPrice.Text != "")
+                {
+                   ship.TotalPrice = Convert.ToInt32(textBoxTotalPrice.Text);
+                }
                 Program.kv.Shipment.Add(ship);
                 Program.kv.SaveChanges();
                 ShowShipment();
+                }
+            }
+            catch (Exception a)
+            {
+                MessageBox.Show("" + a.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void buttonDel_Click(object sender, EventArgs e)
         {
-            if (listViewShipment.SelectedItems.Count == 1)
+            try
             {
-                Shipment ship = listViewShipment.SelectedItems[0].Tag as Shipment;
-                Program.kv.Shipment.Remove(ship);
-                Program.kv.SaveChanges();
+                if (listViewShipment.SelectedItems.Count == 1)
+                {
+                    Shipment ship = listViewShipment.SelectedItems[0].Tag as Shipment;
+                    Program.kv.Shipment.Remove(ship);
+                    Program.kv.SaveChanges();
+                    ShowShipment();
+                }
+                comboBoxMaterial.SelectedItem = null;
+                comboBoxProvider.SelectedItem = null;
+                dateTimePickerShip.Value = DateTime.Now;
+                textBoxQuantity.Text = "";
+                textBoxPlace.Text = "";
+                textBoxTotalPrice.Text = "";
             }
-        }
-
-        private void FormShipment_Load(object sender, EventArgs e)
-        {
-
+            catch
+            {
+                MessageBox.Show("Невозможно удалить, эта запись используется!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void listViewShipment_SelectedIndexChanged(object sender, EventArgs e)
@@ -91,19 +148,22 @@ namespace kv
             if (listViewShipment.SelectedItems.Count == 1)
             {
                 Shipment ship = listViewShipment.SelectedItems[0].Tag as Shipment;
-                comboBoxMaterial.SelectedIndex = comboBoxMaterial.FindString(ship.Material.ToString());
-                comboBoxProvider.SelectedIndex = comboBoxProvider.FindString(ship.Provider.ToString());
+                comboBoxMaterial.SelectedIndex = comboBoxMaterial.FindString(ship.Id_material.ToString());
+                comboBoxProvider.SelectedIndex = comboBoxProvider.FindString(ship.Id_provider.ToString());
+                dateTimePickerShip.Value = ship.Date.GetValueOrDefault();
+                textBoxQuantity.Text = ship.Quantity.ToString();
+                textBoxPlace.Text = ship.Place.ToString();
+                textBoxTotalPrice.Text = ship.TotalPrice.ToString();
             }
             else
             {
                 comboBoxMaterial.SelectedItem = null;
                 comboBoxProvider.SelectedItem = null;
+                dateTimePickerShip.Value = DateTime.Now;
+                textBoxQuantity.Text = "";
+                textBoxPlace.Text = "";
+                textBoxTotalPrice.Text = "";
             }
-        }
-
-        private void comboBoxMaterial_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
